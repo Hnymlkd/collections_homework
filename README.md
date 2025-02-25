@@ -9,10 +9,10 @@
 * MyLinkedList<T>
 * MyHashSet<T> 
 * MyHashMap<K, V> (не забудь про equals и hashcode)
-* MyQueue<T>
-* MyStack<T>
-* MyPriorityQueue<T> (opt)
-* MyTreeMap<K, V> (opt)
+* MyQueueClass<T>
+* MyStackClass<T>
+* MyPriorityQueueClass<T> (opt)
+* MyTreeMapClass<K, V> (opt)
 
 Классы должны располагаться в папке impl
 
