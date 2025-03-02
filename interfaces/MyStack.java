@@ -1,3 +1,5 @@
+package interfaces;
+
 public interface MyStack<T> extends Printable {
     void push(T element);
     T pop();

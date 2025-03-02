@@ -1,3 +1,5 @@
+package interfaces;
+
 public interface MyMap<K, V> extends Printable {
     void put(K key, V value);
     V get(K key);
