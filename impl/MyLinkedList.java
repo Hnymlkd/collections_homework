@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 public class MyLinkedList<T> implements MyList<T> {
     @Override
-    public String print() {
+    public String toString() {
         return "";
     }
 

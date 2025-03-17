@@ -3,36 +3,37 @@ package impl;
 
 import interfaces.MyQueue;
 
+import java.util.LinkedList;
 import java.util.Queue;
 
 public class MyQueueClass<T> implements MyQueue<T> {
 
-    public Queue<T> queue = new Queue<>();
-
     public void enqueue(T element) {
-        queue.add(element);
+        return
     }
 
     public T dequeue() {
-        return queue.poll();
+        return
     }
 
     public T peek() {
-        return queue.peek();
+        return
     }
 
     public int size() {
-        return queue.size();
+       return
     }
 
     public boolean isEmpty() {
-        return queue.isEmpty();
+        return
     }
 
-    @Override
     public String print() {
         return "";
     }
-}
 
+    Queue
+
+}
 */
+

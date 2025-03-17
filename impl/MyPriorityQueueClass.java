@@ -29,7 +29,7 @@ public class MyPriorityQueueClass<T extends Comparable<T>> implements MyPriority
     }
 
     @Override
-    public String print() {
+    public String toString() {
         return "";
     }
 }

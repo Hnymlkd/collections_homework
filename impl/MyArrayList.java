@@ -1,9 +1,6 @@
 package impl;
 
 import interfaces.MyList;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Iterator;
 
 public class MyArrayList<T> implements MyList<T> {
@@ -24,10 +21,10 @@ public class MyArrayList<T> implements MyList<T> {
 
     private void ensureCapacity() {
         if (size == array.length) {
-            T[] newArray = array;
+            T[] oldArray = array;
             array = (T[]) new Object[array.length * 2];
-            for (int i = 0; i < newArray.length; i++) {
-                array[i] = newArray[i];
+            for (int i = 0; i < oldArray.length; i++) {
+                array[i] = oldArray[i];
             }
         }
     }
@@ -40,14 +37,16 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public T get(int index) {
+        if(index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException();
+        }
         return array[index];
     }
 
     @Override
     public T remove(int index) {
         T element = array[index];
-
-        /*System.arraycopy(array, index + 1, array, index, size - index - 1);*/
+        array[index] = null;
         size--;
         return element;
     }
@@ -62,8 +61,6 @@ public class MyArrayList<T> implements MyList<T> {
         return size == 0;
     }
 
-
-    @Override
     public String print() {
         return "";
     }
@@ -72,5 +69,4 @@ public class MyArrayList<T> implements MyList<T> {
     public Iterator<T> iterator() {
         return null;
     }
-
 }
