@@ -1,3 +1,4 @@
+/*
 package impl;
 
 import interfaces.MyList;
@@ -49,3 +50,4 @@ public class MyLinkedList<T> implements MyList<T> {
     public boolean isEmpty() {
     }
 }
+*/
